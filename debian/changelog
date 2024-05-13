@@ -1,5 +1,159 @@
-template-repository (1.0-1) unstable; urgency=medium
+texttable (1.6.7-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 1.6.7
+  * d/control: Bump Standards-Version to 4.6.2; no changes needed.
+  * d/copyright: Update year.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Tue, 20 Dec 2022 14:59:23 -0500
+
+texttable (1.6.4-1) unstable; urgency=medium
+
+  * Team upload.
+  * d/watch: Upstream tarball from Github
+  * d/control: Bump Standards-Version to 4.6.0.1.
+  * New upstream version 1.6.4
+
+ -- Ricardo Brandao <rbrandao@protonmail.com>  Sun, 21 Nov 2021 19:36:16 -0300
+
+texttable (1.6.3-2) unstable; urgency=medium
+
+  * d/control: Mark python3-texttable as Multi-Arch: foreign.
+    Thanks to Helmut Grohne <helmut@subdivi.de> (Closes: #983612)
+  * d/control: Bump Standards-Version to 4.5.1.
+  * d/watch: Bump to version 4.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Sat, 27 Feb 2021 11:38:54 -0500
+
+texttable (1.6.3-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 1.6.3
+  * d/copyright: Update years and my email address.
+  * d/control: Bump debhelper-compat to 13.
+  * d/control: Bump Standards-Version to 4.5.0.
+  * d/control: Add Rules-Requires-Root: no.
+  * d/control: Build-Depend on python3-pytest.
+  * d/rules: Adjust build environment to make it possible to run tests.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Fri, 16 Oct 2020 21:03:26 -0400
+
+texttable (1.6.2-2) unstable; urgency=medium
+
+  * Bump version in order to make a source-only upload and unblock the
+    migration.
+
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Sat, 19 Oct 2019 18:28:07 -0400
+
+texttable (1.6.2-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+  [ Sergio Durigan Junior ]
+  * Bump compat version to 12.
+  * Drop Python 2 package.
+  * New upstream version 1.6.2.
+  * Bump Standards-Version to 4.4.1.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Fri, 04 Oct 2019 01:22:45 -0400
+
+texttable (1.6.0-1) unstable; urgency=medium
+
+  * New upstream version 1.6.0
+  * Build-Depend on python{,3}-wcwidth for better rendering support.
+  * Bump Standards-Version to 4.3.0.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Sat, 26 Jan 2019 18:09:06 -0500
+
+texttable (1.5.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 1.5.0
+  * List the correct Homepage address on d/control.
+  * Update d/copyright and reflect upstream's license change to Expat.
+  * Bump Standards-Version to 4.2.1.
+  * Add python{,3}-setuptools to B-D.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Mon, 12 Nov 2018 00:37:03 -0500
+
+texttable (1.4.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 1.4.0
+  * Update my email address.
+  * Bump Standards-Version to 4.1.5.
+
+ -- Sergio Durigan Junior <sergiodj@debian.org>  Mon, 09 Jul 2018 02:07:45 -0400
+
+texttable (1.2.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+
+  [ Sergio Durigan Junior ]
+  * New upstream version 1.2.1.
+  * Bump Standards-Version to 4.1.3.
+  * Bump d/compat version to 11.
+  * Use HTTPS on d/copyright Format header.
+
+ -- Sergio Durigan Junior <sergiodj@sergiodj.net>  Thu, 15 Feb 2018 00:12:50 -0500
+
+texttable (0.9.1-1) unstable; urgency=medium
+
+  * New upstream version 0.9.1
+  * Bump standards to 4.0.1.
+  * Bump compat level to 10.
+  * Enable autopkgtest.
+
+ -- Sergio Durigan Junior <sergiodj@sergiodj.net>  Fri, 18 Aug 2017 08:47:18 -0400
+
+texttable (0.8.4-2) unstable; urgency=medium
+
+  [ Sergio Durigan Junior ]
+  * Building and packaging the module against Python 3 as well.
+
+  [ Mattia Rizzolo ]
+  * Fix debian/copyright details.
+
+ -- Sergio Durigan Junior <sergiodj@sergiodj.net>  Wed, 22 Jun 2016 01:19:19 -0400
+
+texttable (0.8.4-1) unstable; urgency=medium
+
+  [ SVN-Git Migration ]
+  * git-dpm config
+  * Update Vcs fields for git migration
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Sergio Durigan Junior ]
+  * Import texttable_0.8.4.orig.tar.gz
+  * Updating Standards-Version to 3.9.8
+  * Adding myself to Uploaders. (Closes: #826156)
+
+ -- Sergio Durigan Junior <sergiodj@sergiodj.net>  Thu, 16 Jun 2016 20:20:29 -0400
+
+texttable (0.8.1-1) unstable; urgency=low
+
+    * Initial release. (Closes: #719238)
+
+ -- Léo Cavaillé <leo@cavaille.net>  Thu, 15 Aug 2013 16:06:59 +0200
